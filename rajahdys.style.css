@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f5f8ff;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+	min-block-size: 100vh;
+}
+
+button {
+	cursor: pointer;
+	font: inherit;
+}
+
+canvas {
+	background-color: #0d0d0d;
+}
+
+.button {
+	background-color: #404663;
+	color: #fff;
+	border: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	margin: 1rem 1rem;
+	padding: 0.5em 1.25em;
+	border-radius: 0.5em;
+	z-index: 999;
+	position: relative;
+	box-shadow:
+	0px 1.7px 2.2px rgba(0, 0, 0, 0.02),
+	0px 4px 5.3px rgba(0, 0, 0, 0.028),
+	0px 7.5px 10px rgba(0, 0, 0, 0.035),
+	0px 13.4px 17.9px rgba(0, 0, 0, 0.042),
+	0px 25.1px 33.4px rgba(0, 0, 0, 0.05),
+	0px 60px 80px rgba(0, 0, 0, 0.07);
+	opacity: 0.2;
+}
+
+.button:hover {
+	opacity: 0.3;
+	transform: translateY(-0.02em);
+	box-shadow: 2px 2px 5.2px rgba(0, 0, 0, 0.52);
+}
+
+.button:active {
+	transform: scale(1.01);
+}
+
+
+.sp {
+	position: absolute;
+	z-index: 9999;
+	bottom: 0;
+	right: 0;
+	margin: 2rem;
+	background-color: none;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	opacity: 0.1;
+	padding: 0;
+}
+
+.sp:hover {
+	opacity: 0.4;
+}
+
+.sp div {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin: 6px 5.5px;
+}
